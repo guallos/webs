@@ -2,24 +2,39 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
 .app-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 header {
-  background-color: #007acc;
+  background-color: #3c1053;
   color: #ffffff;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
+  border-radius: 5px;
 }
 
 h1 {
   margin: 0;
+  font-size: 1.8em;
 }
+
+h3 {
+  color: #1c2933;
+  font-size: 1em;
+ }
+
+ h4 {
+  color: #1c2933;
+  font-size: 0.6em;
+ }
 
 main {
   margin-top: 20px;
@@ -31,6 +46,7 @@ main {
   border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 form {
@@ -42,14 +58,24 @@ input[type="text"] {
   flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-  background-color: #007acc;
+  background-color: #ff6f61;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ee4b5e;
+}
+
+button:active {
+  background-color: #ee4b5e;
 }
 
 ul {
@@ -60,10 +86,26 @@ ul {
 a {
   color: #007acc;
   text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 footer {
   text-align: center;
   color: #777;
   padding: 10px 0;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: bold;
+  margin-right: 5px;
 }
